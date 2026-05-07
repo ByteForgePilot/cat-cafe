@@ -10,3 +10,6 @@ DB_PASSWORD = os.getenv("DB_PASSWORD", "")
 DB_NAME = os.getenv("DB_NAME", "cat_cafe")
 
 DATABASE_URL = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+JWT_SECRET = os.getenv("JWT_SECRET", "default-secret-change-me")
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
